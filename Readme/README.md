@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="Projeto Calculadora" src="./github.md/preview.png" width="100%">
+  <img alt="Projeto Calculadora" src="./preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
