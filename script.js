@@ -18,12 +18,20 @@ function digitar(caractere) {
     }
 }
 
-
 function limpar() {
     
     document.getElementById("visor").value = "0";
 }
 
+function retirar() {
+    let visor = document.getElementById("visor");
+
+    if (visor.value.length > 1) {
+        visor.value = visor.value.slice (0, -1);
+    } else {
+        visor.value = "0";
+    }
+}
 // Função que processa toda a expressão matemática (botão =)
 function calcular() {
     
