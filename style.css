@@ -38,7 +38,7 @@ body{
 }
 .tecla {
     font-size: 22px;
-    height: 60px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
     border: none;
@@ -47,7 +47,7 @@ body{
 .btnoperador{
     cursor: pointer;
     font-size: 22px;
-    height: 60px;
+    height: 50px;
     border-radius: 50%;
     background-color: yellow;
     border: none;
@@ -56,7 +56,7 @@ body{
     cursor: pointer;
     border: none;
     font-size: 22px;
-    height: 60px;
+    height: 50px;
     border-radius: 50%;
 }
 .btnlimpar{
@@ -64,7 +64,7 @@ body{
     cursor: pointer;
     border: none;
     font-size: 22px;
-    height: 60px;
+    height: 50px;
     border-radius: 50%;
     background-color: red;
 }
@@ -72,8 +72,7 @@ body{
     cursor: pointer;
     border: none;
     font-size: 22px;
-    grid-column: span 4;
-    height: 60px; 
+    height: 50px; 
     border-radius: 30px;
     background-color: cyan;   
 }
@@ -81,7 +80,21 @@ body{
     cursor: pointer;
     border-radius: 50%;
     font-size: 22px;
-    height: 60px;
+    height: 50px;
     border: none;
     background-color: greenyellow;
+}
+.ponto  {
+    cursor: pointer;
+    font-size: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(66, 63, 238);
+    border: none;
+}
+#historia {
+    border: solid yellow 1px;
+    width: 10px;
+    height: 5px;
+
 }
