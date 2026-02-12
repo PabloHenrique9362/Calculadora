@@ -33,13 +33,53 @@ function retirar() {
     }
 }
 // Função que processa toda a expressão matemática (botão =)
+let historico = [];
 function calcular() {
     
     let visor = document.getElementById("visor");
     
-   
-    let resultado = eval(visor.value);
-   
-      
+    let conta = visor.value
+
+    try {
+        if (conta.includes("√")) {
+            
+            let numero = conta.replace("√", "");
+            let resultado = Math.sqrt(Number(numero));
+
+            visor.value = resultado;
+            historico.push("√" + numero + " = " + resultado);
+            atualizarHistorico();
+            return;
+        }
+        if (conta.includes("%")) {
+
+            let numero = conta.replace("%", "");
+            let resultado = Number(numero) / 100;
+
+            visor.value = resultado;
+            historico.push(numero + "% = " + resultado);
+            atualizarHistorico();
+            return;
+        }
+
+    let resultado = eval(conta);
+
     visor.value = resultado;
+    
+    historico.push(conta + '=' +resultado)
+
+    atualizarHistorico();
+
+    } catch {
+            visor.value = "Erro";
+    }
 }
+function atualizarHistorico() {
+        let divHistorico = document.getElementById('historico');
+
+        divHistorico.innerHTML = "";
+
+        historico.forEach(function(item) {
+            divHistorico.innerHTML += "<p>"+ item +"</p>";
+        });
+    }

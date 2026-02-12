@@ -92,9 +92,18 @@ body{
     background-color: rgb(66, 63, 238);
     border: none;
 }
-#historia {
-    border: solid yellow 1px;
-    width: 10px;
-    height: 5px;
-
+.historico {
+    max-height: 90px;
+    overflow-y: auto;
+    background: #0f0f0f;
+    color: #aaa;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    text-align: right;
 }
+.historico p {
+    margin: 3px 0;
+}
+
