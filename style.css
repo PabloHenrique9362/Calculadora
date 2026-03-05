@@ -84,13 +84,18 @@ body{
     border: none;
     background-color: greenyellow;
 }
-.ponto  {
+.ponto {
     cursor: pointer;
-    font-size: 50px;
+    font-size: 30px; /* diminui o tamanho */
     height: 50px;
+    width: 100%; /* importante se quiser círculo perfeito */
     border-radius: 50%;
     background-color: rgb(66, 63, 238);
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .historico {
     max-height: 90px;
